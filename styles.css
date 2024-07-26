@@ -82,3 +82,87 @@ html {
 .unslider-nav li a.active {
   background: #ff1e00; /* Warna titik aktif */
 }
+
+h2 {
+  position: relative;
+  padding-bottom: 20px; /* Menambahkan ruang antara teks dan garis */
+  margin-bottom: 20px; /* Menambahkan jarak antara garis dan elemen berikutnya */
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* Menempatkan garis di tengah secara horizontal */
+  bottom: 0; /* Jarak dari bawah elemen <h2> */
+  width: 15%; /* Panjang garis */
+  height: 3px; /* Ketebalan garis */
+  background-color: #ff0000; /* Warna garis */
+  transform: translateX(-50%); /* Mengatur posisi garis agar sejajar dengan teks */
+}
+
+/* Menetapkan gaya untuk section dan container di dalamnya */
+#produk {
+  display: flex;
+  gap: 20px; /* Jarak antara kartu */
+  padding: 20px; /* Padding di sekitar section */
+  justify-content: center; /* Mengatur kartu di tengah secara horizontal */
+  flex-wrap: wrap; /* Membungkus kartu ke baris berikutnya jika tidak muat dalam satu baris */
+}
+
+/* Gaya untuk kartu */
+.card {
+  width: 15rem;
+  height: 15rem;
+  border: 2px solid #ff0000; /* Border merah tipis */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 4px 4px 5px rgba(255, 0, 0, 1); /* Bayangan hanya di kanan dan bawah */
+  background-color: #fff;
+  overflow: hidden; /* Memastikan tidak ada konten yang meluber keluar kartu */
+  position: relative; /* Posisi relatif untuk bayangan */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Gaya untuk card-body */
+.card-body {
+  display: flex;
+  flex-direction: column; /* Menyusun elemen secara vertikal */
+  justify-content: space-between; /* Menyebar elemen secara vertikal dengan ruang di antara mereka */
+  align-items: center; /* Menyusun elemen di tengah secara horizontal */
+  padding: 15px;
+  height: 100%; /* Mengatur tinggi card-body agar sesuai dengan tinggi kartu */
+}
+
+/* Gaya untuk card-title */
+.card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  text-align: center; /* Menyusun judul di tengah secara horizontal */
+  justify-content: space-between; /* Menyebar elemen secara vertikal dengan ruang di antara mereka */
+}
+
+/* Gaya untuk card-text dan button */
+.card-text {
+  text-align: center; /* Menyusun teks di tengah secara horizontal */
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
