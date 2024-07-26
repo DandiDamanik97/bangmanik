@@ -182,7 +182,7 @@ h2::after {
 #tentangkami {
   border-top: 1px solid #ddd; /* Garis atas */
   border-bottom: 1px solid #ddd; /* Garis bawah */
-  padding: 1rem 0; /* Ruang di atas dan bawah konten */
+  padding: 0; /* Ruang di atas dan bawah konten */
   display: flex; /* Mengatur kontainer menjadi flex container */
   justify-content: center; /* Memusatkan flex item secara horizontal */
 }
@@ -212,4 +212,17 @@ h2::after {
 
 #tentangkami a:hover {
   color: black; /* Warna teks tautan saat hover */
+}
+
+#diawasi {
+  border-bottom: 1px solid #ddd; /* Garis bawah */
+  padding: 0; /* Ruang di atas dan bawah konten */
+  display: flex; /* Mengatur kontainer menjadi flex container */
+  justify-content: center; /* Memusatkan flex item secara horizontal */
+}
+
+#diawasi img {
+  max-width: 10%; /* Mengatur ukuran gambar agar sesuai dengan container */
+  height: auto; /* Menjaga rasio aspek gambar */
+  margin: 0 35px; /* Menambahkan jarak horizontal di sekitar gambar */
 }
