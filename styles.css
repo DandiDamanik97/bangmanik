@@ -166,3 +166,15 @@ h2::after {
 .btn:hover {
   background-color: #0056b3;
 }
+
+#publikasi {
+  padding: 20px; /* Padding di sekitar section */
+  background-color: #dce7f7; /* Warna latar belakang */
+}
+#publikasi a {
+  color: red;
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+#publikasi a:hover {
+  color: black;
+}
