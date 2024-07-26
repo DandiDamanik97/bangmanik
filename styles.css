@@ -1,0 +1,84 @@
+/* Mengatur margin dan padding ke nol untuk menghindari jarak */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5px; /* Menambah jarak antar item navbar */
+}
+
+.nav-item {
+  padding: 5 20px; /* Menambah padding untuk area klik yang lebih besar */
+}
+
+.nav-item.active {
+  background-color: red; /* Change background color to red when active */
+}
+
+.navbar-brand {
+  padding: 0 20px; /* Menambah padding untuk area brand yang lebih besar */
+  font-size: 1.5rem; /* Adjust the size of the brand text */
+}
+
+.nav-link {
+  font-size: 1.2rem; /* Adjust the size of the navbar link text */
+}
+
+/* CSS untuk styling slider */
+.unslider {
+  width: 100%;
+  height: 500px;
+  padding: 0;
+  margin: 0;
+  margin: auto;
+}
+.unslider ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.unslider li {
+  position: relative;
+}
+.unslider img {
+  width: 100%;
+  display: block;
+}
+
+/* Styling untuk kontainer navigasi titik */
+.unslider-nav {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 10px; /* Tempatkan di bawah slider */
+  width: 100%; /* Membuatnya selebar slider */
+}
+
+/* Styling untuk setiap titik navigasi */
+.unslider-nav li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.unslider-nav li a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #333; /* Warna titik tidak aktif */
+  border-radius: 50%;
+  text-indent: -9999px; /* Menyembunyikan teks */
+  transition: background-color 0.3s; /* Efek transisi */
+}
+
+.unslider-nav li a.active {
+  background: #ff1e00; /* Warna titik aktif */
+}
