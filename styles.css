@@ -226,3 +226,14 @@ h2::after {
   height: auto; /* Menjaga rasio aspek gambar */
   margin: 0 35px; /* Menambahkan jarak horizontal di sekitar gambar */
 }
+
+.footer {
+  background-color: #f8f9fa; /* Warna latar belakang footer */
+  padding: 10px 0; /* Jarak vertikal di dalam footer */
+}
+
+.footer p {
+  margin: 0;
+  color: #6c757d; /* Warna teks hak cipta */
+  font-size: 14px; /* Ukuran font teks hak cipta */
+}
